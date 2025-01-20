@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
     keymap {
@@ -35,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans      &trans        &trans                &trans                 &trans       &kp STAR   &kp N7  &kp N8    &kp N9  &kp MINUS  &kp DELETE
-&trans     &kp EXCL    &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA    &kp FSLH   &kp N4  &kp N5    &kp N6  &kp PLUS   &trans
-&kp LSHFT  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2           &trans       &kp N0     &kp N1  &kp N2    &kp N3  &trans     &trans
-                                     &kp LGUI              &trans                 &kp SPACE    &kp ENTER  &trans  &kp RALT
+&kp TAB    &rgb_ug RGB_OFF  &trans        &trans                &trans                 &trans       &kp STAR   &kp N7  &kp N8    &kp N9  &kp MINUS  &kp DELETE
+&trans     &kp EXCL         &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA    &kp FSLH   &kp N4  &kp N5    &kp N6  &kp PLUS   &trans
+&kp LSHFT  &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2           &trans       &kp N0     &kp N1  &kp N2    &kp N3  &trans     &trans
+                                          &kp LGUI              &trans                 &kp SPACE    &kp ENTER  &trans  &kp RALT
             >;
         };
 
@@ -54,6 +55,15 @@
 &kp CAPSLOCK  &kp C_VOLUME_UP  &trans    &kp UP_ARROW  &kp C_PREV  &kp K_NEXT          &kp UNDER  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT     &kp C_VOL_DN     &kp LEFT  &kp DOWN      &kp RIGHT   &kp K_PLAY_PAUSE    &kp MINUS  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                          &kp LGUI      &trans      &kp SPACE           &kp ENTER  &trans     &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
