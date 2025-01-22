@@ -36,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &rgb_ug RGB_OFF  &trans        &kp UP_ARROW    &trans           &trans       &kp STAR   &kp N7  &kp N8    &kp N9  &kp MINUS  &kp DELETE
-&trans     &trans           &kp LEFT      &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &kp FSLH   &kp N4  &kp N5    &kp N6  &kp PLUS   &trans
-&kp LSHFT  &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2     &trans       &kp N0     &kp N1  &kp N2    &kp N3  &trans     &trans
-                                          &kp LGUI        &trans           &kp SPACE    &kp ENTER  &trans  &kp RALT
+&kp TAB           &rgb_ug RGB_OFF  &trans        &kp UP_ARROW    &trans           &trans       &kp STAR   &kp N7  &kp N8    &kp N9  &kp MINUS  &kp DELETE
+&kp LEFT_SHIFT    &trans           &kp LEFT      &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &kp FSLH   &kp N4  &kp N5    &kp N6  &kp PLUS   &trans
+&kp LEFT_CONTROL  &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2     &trans       &kp N0     &kp N1  &kp N2    &kp N3  &trans     &trans
+                                                 &kp LGUI        &trans           &kp SPACE    &kp ENTER  &trans  &kp RALT
             >;
         };
 
