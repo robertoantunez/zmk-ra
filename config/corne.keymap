@@ -36,8 +36,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &rgb_ug RGB_OFF  &trans        &kp UP_ARROW    &trans           &trans       &kp STAR   &kp N7  &kp N8    &kp N9  &kp MINUS  &kp DELETE
-&kp LEFT_SHIFT    &trans           &kp LEFT      &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &kp FSLH   &kp N4  &kp N5    &kp N6  &kp PLUS   &trans
+&kp TAB           &rgb_ug RGB_OFF  &trans        &kp UP_ARROW    &trans           &kp HOME     &kp STAR   &kp N7  &kp N8    &kp N9  &kp MINUS  &kp DELETE
+&kp LEFT_SHIFT    &trans           &kp LEFT      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END      &kp FSLH   &kp N4  &kp N5    &kp N6  &kp PLUS   &trans
 &kp LEFT_CONTROL  &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2     &trans       &kp N0     &kp N1  &kp N2    &kp N3  &trans     &trans
                                                  &kp LGUI        &trans           &kp SPACE    &kp ENTER  &trans  &kp RALT
             >;
@@ -51,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE    &kp EXCL      &kp AT           &kp HASH   &kp DLLR              &kp PRCNT                &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp CAPSLOCK  &trans        &kp ASTRK        &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDER  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT     &kp C_VOL_DN  &kp C_VOLUME_UP  &trans     &trans                &trans                   &kp MINUS  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                             &kp LGUI   &trans                &kp SPACE                &kp ENTER  &trans     &kp RALT
+&kp ESCAPE    &kp EXCL      &kp AT           &kp HASH          &kp DLLR              &kp PRCNT                &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp CAPSLOCK  &trans        &kp ASTRK        &kp SLASH         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDER  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT     &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &kp C_PREVIOUS        &kp C_NEXT               &kp MINUS  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                             &kp LGUI          &trans                &kp SPACE                &kp ENTER  &trans     &kp RALT
             >;
         };
     };
