@@ -14,7 +14,7 @@
         APDL_rep: APDL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp FSLH &kp R &kp E &kp P>;
+            bindings = <&kp FSLH &kp R &kp E &kp P &kp FSLH &kp R &kp E &kp P &kp RET>;
             label = "APDL";
         };
 
@@ -23,6 +23,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(C) &kp LS(M) &kp LS(S) &kp LS(E) &kp LS(L) &kp COMMA &kp COMMA>;
             label = "APDL_CM";
+        };
+
+        APDL_fit: APDL_fit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp FSLH &kp V &kp I &kp E &kp W &kp COMMA &kp N1 &kp COMMA &kp N1 &kp COMMA &kp N2 &kp COMMA &kp N3 &kp DLLR &kp FSLH &kp A &kp U &kp T &kp O &kp COMMA &kp N1 &kp DLLR &kp FSLH &kp R &kp E &kp P &kp RET>;
+            label = "APDL_FIT";
         };
     };
 
@@ -76,9 +83,9 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &APDL_CM  &trans    &trans  &trans  &trans  &trans  &APDL_rep  &trans
-&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &APDL_CM  &trans    &trans  &trans  &trans  &APDL_fit  &APDL_rep  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
                         &trans  &trans    &trans    &trans  &trans  &trans
             >;
         };
