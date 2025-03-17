@@ -104,10 +104,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
-&trans  &trans  &APDL_str  &APDL_do  &APDL_CM  &trans    &trans  &trans  &trans  &APDL_fit  &APDL_rep  &trans
-&trans  &trans  &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
-                           &trans    &trans    &trans    &trans  &trans  &trans
+&trans  &trans       &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &APDL_array  &APDL_str  &APDL_do  &APDL_CM  &trans    &trans  &trans  &trans  &APDL_fit  &APDL_rep  &trans
+&trans  &trans       &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
+                                &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
     };
