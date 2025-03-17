@@ -14,14 +14,14 @@
         APDL_rep: APDL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp FSLH &kp R &kp E &kp P &kp FSLH &kp R &kp E &kp P &kp RET>;
+            bindings = <&kp FSLH &kp R &kp E &kp P &kp RET>;
             label = "APDL";
         };
 
         APDL_CM: APDL_CM {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(C) &kp LS(M) &kp LS(S) &kp LS(E) &kp LS(L) &kp COMMA &kp COMMA>;
+            bindings = <&kp C &kp M &kp S &kp E &kp L &kp COMMA &kp COMMA>;
             label = "APDL_CM";
         };
 
@@ -30,6 +30,27 @@
             #binding-cells = <0>;
             bindings = <&none &kp FSLH &kp V &kp I &kp E &kp W &kp COMMA &kp N1 &kp COMMA &kp N1 &kp COMMA &kp N2 &kp COMMA &kp N3 &kp DLLR &kp FSLH &kp A &kp U &kp T &kp O &kp COMMA &kp N1 &kp DLLR &kp FSLH &kp R &kp E &kp P &kp RET>;
             label = "APDL_FIT";
+        };
+
+        APDL_do: APDL_do {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp STAR &kp D &kp O &kp COMMA &kp I &kp COMMA &kp N2 &kp COMMA &kp N9 &kp N9 &kp RET &kp SPACE &kp SPACE &kp C &kp M &kp S &kp E &kp L &kp COMMA &kp COMMA &kp RET &kp STAR &kp E &kp N &kp D &kp D &kp O>;
+            label = "APDL_DO";
+        };
+
+        APDL_array: APDL_array {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp STAR &kp D &kp E &kp L &kp COMMA &kp T &kp S &kp T &kp COMMA &kp COMMA &kp N &kp O &kp P &kp R &kp RET &kp STAR &kp D &kp I &kp M &kp COMMA &kp T &kp S &kp T &kp COMMA &kp A &kp R &kp R &kp A &kp Y &kp COMMA &kp N9 &kp N9 &kp COMMA &kp N1 &kp RET &kp RET &kp SPACE &kp SPACE &kp T &kp S &kp T &kp LPAR &kp N1 &kp COMMA &kp N1 &kp RPAR &kp SPACE &kp EQUAL &kp SPACE &kp N1>;
+            label = "APDL_ARRAY";
+        };
+
+        APDL_str: APDL_str {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp STAR &kp D &kp E &kp L &kp COMMA &kp S &kp T &kp R &kp UNDER &kp COMMA &kp COMMA &kp N &kp O &kp P &kp R &kp RET &kp STAR &kp D &kp I &kp M &kp COMMA &kp S &kp T &kp R &kp UNDER &kp COMMA &kp S &kp T &kp R &kp I &kp N &kp G &kp COMMA &kp N7 &kp N2 &kp COMMA &kp N9 &kp N9 &kp RET &kp RET &kp SPACE &kp SPACE &kp S &kp T &kp R &kp UNDER &kp LPAR &kp N1 &kp COMMA &kp N2 &kp RPAR &kp SPACE &kp EQUAL &kp SPACE &kp SQT &kp LS(L) &kp LS(C) &kp SPACE &kp N2 &kp COLON &kp SPACE &kp LS(T) &kp I &kp T &kp L &kp E &kp SQT>;
+            label = "APDL_STR";
         };
     };
 
@@ -83,10 +104,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &APDL_CM  &trans    &trans  &trans  &trans  &APDL_fit  &APDL_rep  &trans
-&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
-                        &trans  &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &APDL_str  &APDL_do  &APDL_CM  &trans    &trans  &trans  &trans  &APDL_fit  &APDL_rep  &trans
+&trans  &trans  &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
+                           &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
     };
