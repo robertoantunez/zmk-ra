@@ -10,6 +10,22 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    macros {
+        APDL_rep: APDL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp R &kp E &kp P>;
+            label = "APDL";
+        };
+
+        APDL_CM: APDL_CM {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(C) &kp LS(M) &kp LS(S) &kp LS(E) &kp LS(L) &kp COMMA &kp COMMA>;
+            label = "APDL_CM";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -36,10 +52,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &kp F2           &rgb_ug RGB_TOG  &kp UP_ARROW    &kp LEFT_PARENTHESIS  &kp COMMA                &kp STAR   &kp N7  &kp N8    &kp N9  &kp MINUS  &kp DELETE
-&kp LEFT_SHIFT    &kp F7           &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp RIGHT_PARENTHESIS    &kp FSLH   &kp N4  &kp N5    &kp N6  &kp PLUS   &kp HOME
-&kp LEFT_CONTROL  &rgb_ug RGB_EFF  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2          &kp EQUAL                &kp N0     &kp N1  &kp N2    &kp N3  &kp DOT    &kp END
-                                                    &kp LGUI        &trans                &kp SPACE                &kp ENTER  &trans  &kp RALT
+&kp TAB           &kp F2  &rgb_ug RGB_OFF  &kp UP_ARROW    &kp LEFT_PARENTHESIS  &kp COMMA                &kp STAR   &kp N7  &kp N8    &kp N9  &kp MINUS  &kp DELETE
+&kp LEFT_SHIFT    &kp F7  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp RIGHT_PARENTHESIS    &kp FSLH   &kp N4  &kp N5    &kp N6  &kp PLUS   &kp HOME
+&kp LEFT_CONTROL  &trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2          &kp EQUAL                &kp N0     &kp N1  &kp N2    &kp N3  &kp DOT    &kp END
+                                           &kp LGUI        &trans                &kp SPACE                &kp ENTER  &mo 3   &kp RALT
             >;
         };
 
@@ -55,6 +71,15 @@
 &kp CAPSLOCK  &trans        &kp ASTRK        &kp SLASH         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp EQUAL  &kp UNDER  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT     &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &kp C_PREVIOUS        &kp C_NEXT               &kp PLUS   &kp MINUS  &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                              &kp LGUI          &trans                &kp SPACE                &kp ENTER  &trans     &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &APDL_CM  &trans    &trans  &trans  &trans  &trans  &APDL_rep  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans     &trans
+                        &trans  &trans    &trans    &trans  &trans  &trans
             >;
         };
     };
