@@ -35,21 +35,21 @@
         APDL_do: APDL_do {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp STAR &kp D &kp O &kp COMMA &kp I &kp COMMA &kp N2 &kp COMMA &kp N9 &kp N9 &kp RET &kp SPACE &kp SPACE &kp C &kp M &kp S &kp E &kp L &kp COMMA &kp COMMA &kp RET &kp BACKSPACE &kp ASTERISK &kp E &kp N &kp D &kp D &kp O>;
+            bindings = <&none &kp STAR &kp D &kp O &kp COMMA &kp R &kp COMMA &kp N2 &kp COMMA &kp N9 &kp N9 &kp RET &kp SPACE &kp SPACE &kp C &kp M &kp S &kp E &kp L &kp COMMA &kp COMMA &kp RET &kp BACKSPACE &kp STAR &kp E &kp N &kp D &kp D &kp O>;
             label = "APDL_DO";
         };
 
         APDL_array: APDL_array {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp STAR &kp D &kp E &kp L &kp COMMA &kp T &kp S &kp T &kp COMMA &kp COMMA &kp N &kp O &kp P &kp R &kp RET &kp STAR &kp D &kp I &kp M &kp COMMA &kp T &kp S &kp T &kp COMMA &kp A &kp R &kp R &kp A &kp Y &kp COMMA &kp N9 &kp N9 &kp COMMA &kp N1 &kp RET &kp RET &kp SPACE &kp SPACE &kp T &kp S &kp T &kp LPAR &kp N1 &kp COMMA &kp N1 &kp RPAR &kp SPACE &kp EQUAL &kp SPACE &kp N1>;
+            bindings = <&none &kp STAR &kp D &kp I &kp M &kp COMMA &kp T &kp S &kp T &kp COMMA &kp A &kp R &kp R &kp A &kp Y &kp COMMA &kp N9 &kp N9 &kp COMMA &kp N1 &kp RET>;
             label = "APDL_ARRAY";
         };
 
         APDL_str: APDL_str {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp STAR &kp D &kp E &kp L &kp COMMA &kp S &kp T &kp R &kp UNDER &kp COMMA &kp COMMA &kp N &kp O &kp P &kp R &kp RET &kp STAR &kp D &kp I &kp M &kp COMMA &kp S &kp T &kp R &kp UNDER &kp COMMA &kp S &kp T &kp R &kp I &kp N &kp G &kp COMMA &kp N7 &kp N2 &kp COMMA &kp N9 &kp N9 &kp RET &kp RET &kp SPACE &kp SPACE &kp S &kp T &kp R &kp UNDER &kp LPAR &kp N1 &kp COMMA &kp N2 &kp RPAR &kp SPACE &kp EQUAL &kp SPACE &kp SQT &kp LS(L) &kp LS(C) &kp SPACE &kp N2 &kp COLON &kp SPACE &kp LS(T) &kp I &kp T &kp L &kp E &kp SQT>;
+            bindings = <&none &kp STAR &kp D &kp I &kp M &kp COMMA &kp S &kp T &kp R &kp UNDER &kp COMMA &kp S &kp T &kp R &kp I &kp N &kp G &kp COMMA &kp N7 &kp N2 &kp COMMA &kp N9 &kp N9 &kp ENTER>;
             label = "APDL_STR";
         };
     };
