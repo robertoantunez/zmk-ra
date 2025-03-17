@@ -35,7 +35,7 @@
         APDL_do: APDL_do {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp STAR &kp D &kp O &kp COMMA &kp I &kp COMMA &kp N2 &kp COMMA &kp N9 &kp N9 &kp RET &kp SPACE &kp SPACE &kp C &kp M &kp S &kp E &kp L &kp COMMA &kp COMMA &kp RET &kp STAR &kp E &kp N &kp D &kp D &kp O>;
+            bindings = <&none &kp STAR &kp D &kp O &kp COMMA &kp I &kp COMMA &kp N2 &kp COMMA &kp N9 &kp N9 &kp RET &kp SPACE &kp SPACE &kp C &kp M &kp S &kp E &kp L &kp COMMA &kp COMMA &kp RET &kp BACKSPACE &kp ASTERISK &kp E &kp N &kp D &kp D &kp O>;
             label = "APDL_DO";
         };
 
