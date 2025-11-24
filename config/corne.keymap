@@ -105,9 +105,18 @@
         layer_3 {
             bindings = <
 &trans  &trans       &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
-&trans  &APDL_array  &APDL_str  &APDL_do  &APDL_CM  &trans    &trans  &trans  &trans  &APDL_fit  &APDL_rep  &trans
+&trans  &APDL_array  &APDL_str  &APDL_do  &APDL_CM  &trans    &trans  &to 4   &trans  &APDL_fit  &APDL_rep  &trans
 &trans  &bt BT_CLR   &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans     &trans     &trans
                                 &trans    &trans    &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&to 0   &kp ESCAPE  &kp C   &kp L   &kp T   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp M       &kp S   &kp P   &kp U   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
